@@ -1,0 +1,26 @@
+{
+  "titulo_sitio": "Calma velas de soja",
+  "descripcion": "Velas de soja artesanales. Elegí del catálogo o diseñá la tuya.",
+  "logo": "/img/logo.jpg",
+  "logo_texto": "Calma",
+  "logo_subtexto": "velas de soja",
+  "whatsapp": "5491100000000",
+  "mensaje_compra": "Hola! Quiero comprar la vela {nombre} ({precio}).",
+  "mensaje_personalizar": "Hola! Quiero personalizar mi vela. Forma: {forma}. Color: {color}. Aroma: {aroma}.",
+  "menu": {
+    "catalogo": "Catálogo",
+    "personalizar": "Personalizá",
+    "instagram": "Instagram"
+  },
+  "colores": {
+    "crema": "#f6f2ec",
+    "papel": "#fbf9f5",
+    "salvia": "#8a9a78",
+    "salvia_oscuro": "#6f7f5f",
+    "arcilla": "#d3b496",
+    "malva": "#cfa9a6",
+    "lavanda": "#b9a4c9",
+    "texto": "#3c3d34",
+    "suave": "#e9e3d8"
+  }
+}

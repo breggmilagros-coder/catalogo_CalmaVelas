@@ -1,0 +1,87 @@
+{
+  "titulo": "Catálogo",
+  "bajada": "Elegí tu vela y pedila directo por WhatsApp.",
+  "boton": "Comprar por WhatsApp",
+  "productos": [
+    {
+      "nombre": "Lavanda & Calma",
+      "descripcion": "Aroma floral suave para soltar el día.",
+      "detalle": "( 200 g · 40 hs )",
+      "precio": "$9.500",
+      "color_banda": "tan",
+      "imagen": "/img/01.jpg"
+    },
+    {
+      "nombre": "Vainilla Cremosa",
+      "descripcion": "Dulce, tibia y envolvente.",
+      "detalle": "( 200 g · 40 hs )",
+      "precio": "$9.500",
+      "color_banda": "mauve",
+      "imagen": "/img/02.jpg"
+    },
+    {
+      "nombre": "Eucalipto Fresco",
+      "descripcion": "Aire limpio para tu espacio de trabajo.",
+      "detalle": "( 220 g · 45 hs )",
+      "precio": "$9.800",
+      "color_banda": "sage",
+      "imagen": "/img/03.jpg"
+    },
+    {
+      "nombre": "Sándalo & Ámbar",
+      "descripcion": "Notas amaderadas, cálidas y profundas.",
+      "detalle": "( 220 g · 45 hs )",
+      "precio": "$10.500",
+      "color_banda": "tan",
+      "imagen": "/img/04.jpg"
+    },
+    {
+      "nombre": "Té Blanco",
+      "descripcion": "Liviana, limpia y delicada.",
+      "detalle": "( 180 g · 35 hs )",
+      "precio": "$9.200",
+      "color_banda": "mauve",
+      "imagen": "/img/05.jpg"
+    },
+    {
+      "nombre": "Flor de Algodón",
+      "descripcion": "Aroma a ropa recién lavada.",
+      "detalle": "( 180 g · 35 hs )",
+      "precio": "$9.200",
+      "color_banda": "sage",
+      "imagen": "/img/06.jpg"
+    },
+    {
+      "nombre": "Cítricos del Sur",
+      "descripcion": "Naranja y bergamota para despertar.",
+      "detalle": "( 200 g · 40 hs )",
+      "precio": "$9.800",
+      "color_banda": "tan",
+      "imagen": "/img/07.jpg"
+    },
+    {
+      "nombre": "Jazmín Nocturno",
+      "descripcion": "Floral intenso para las noches.",
+      "detalle": "( 200 g · 40 hs )",
+      "precio": "$10.200",
+      "color_banda": "mauve",
+      "imagen": "/img/08.jpg"
+    },
+    {
+      "nombre": "Bosque de Pino",
+      "descripcion": "Verde, fresco y silvestre.",
+      "detalle": "( 250 g · 50 hs )",
+      "precio": "$10.500",
+      "color_banda": "sage",
+      "imagen": "/img/09.jpg"
+    },
+    {
+      "nombre": "Set Trío Mini",
+      "descripcion": "Tres velas mini para regalar.",
+      "detalle": "( 3 x 80 g )",
+      "precio": "$14.900",
+      "color_banda": "tan",
+      "imagen": "/img/10.jpg"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Caveat:wght@500&family=Nunito+Sans:wght@400;600&display=swap");
+:root{--cream:#f6f2ec;--paper:#fbf9f5;--sage:#8a9a78;--sage-d:#6f7f5f;--tan:#d3b496;--mauve:#cfa9a6;--lav:#b9a4c9;--ink:#3c3d34;--soft:#e9e3d8}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 "Nunito Sans",sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.1}
+h1{font-size:clamp(2.8rem,7vw,5rem)}h2{font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:.4rem}h3{font-size:1.7rem}
+img{max-width:100%;display:block}a{color:inherit}
+.script,.note{font-family:Caveat,cursive;color:var(--sage-d);font-size:1.35rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 5vw;position:sticky;top:0;background:color-mix(in srgb,var(--cream) 95%,transparent);z-index:5;border-bottom:1px solid var(--soft)}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:600 1.8rem "Cormorant Garamond",serif;line-height:1}
+.logo img{height:44px}.logo small{display:block;font:400 .8rem "Caveat",cursive;font-size:1.05rem;color:var(--sage-d)}
+nav{display:flex;gap:1.4rem}nav a{text-decoration:none;font-weight:600}nav a:hover{color:var(--sage-d)}
+a:focus-visible,input:focus-visible+label{outline:3px solid var(--lav);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:4rem 5vw}
+.hero p{margin:1rem 0 1.8rem;max-width:34rem}
+.hero-img{border-radius:1.5rem;width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--sage);color:#fff;text-decoration:none;font-weight:600;padding:.55rem 1.1rem;border-radius:999px;transition:background .2s}
+.btn:hover{background:var(--sage-d)}.big{padding:.85rem 1.8rem;font-size:1.05rem}
+.ghost{background:transparent;color:var(--sage-d);border:2px solid var(--sage)}.ghost:hover{background:var(--sage);color:#fff}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.5rem 5vw;background:var(--sage);color:#fff;text-align:center}
+.values b{display:block;font:600 1.4rem "Cormorant Garamond",serif}.values span{font-family:Caveat,cursive;font-size:1.25rem}
+section{padding:5rem 5vw}.wrap{max-width:1180px;margin:auto}.narrow{max-width:760px}.center{text-align:center}
+.lead{margin-bottom:2.5rem;color:color-mix(in srgb,var(--ink) 82%,var(--cream))}.soft{background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.6rem}
+.card{background:var(--paper);border-radius:1.2rem;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--soft)}
+.card img{aspect-ratio:1;width:100%;object-fit:cover;background:var(--soft)}
+.body{padding:1.2rem 1.3rem;flex:1}.body p{font-size:.95rem;margin:.4rem 0}
+.band{display:flex;flex-direction:column;gap:.6rem;padding:1rem 1.3rem;color:#fff}
+.band strong{font:600 1.7rem "Cormorant Garamond",serif}
+.sage{background:var(--sage)}.lav{background:var(--lav)}.tan{background:var(--tan)}.mauve{background:var(--mauve)}
+.band .btn{background:#fff;color:var(--ink);font-size:.95rem}.band .btn:hover{background:var(--cream)}
+.custom-img{border-radius:1.5rem;width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:2rem;background:var(--paper)}
+.custom{background:var(--paper);padding:2rem;border-radius:1.5rem}
+fieldset{border:0;padding:0;margin-bottom:1.6rem;display:flex;flex-wrap:wrap;gap:.6rem}
+legend{font:600 1.6rem "Cormorant Garamond",serif;margin-bottom:.7rem}
+.custom input{position:absolute;opacity:0;pointer-events:none}
+.custom label{cursor:pointer;padding:.45rem 1.1rem;border:2px solid var(--soft);border-radius:999px;background:var(--cream)}
+.custom label[style]::before{content:"";display:inline-block;width:.9rem;height:.9rem;border-radius:50%;background:var(--c);margin-right:.5rem;border:1px solid rgba(0,0,0,.15)}
+.custom input:checked+label{background:var(--sage);border-color:var(--sage);color:#fff}
+.send{text-align:center;margin-top:.5rem}
+footer{background:var(--sage);color:#fff;text-align:center;padding:2.5rem 5vw}
+footer img{height:56px;margin:0 auto .8rem;filter:brightness(0) invert(1)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:2rem}.values{grid-template-columns:1fr}nav{gap:1rem;font-size:.95rem}section{padding:3.5rem 5vw}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* Sección de Reels */
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.reel-card {
+  background: var(--paper);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  border: 1px solid var(--soft);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(60, 61, 52, 0.08);
+}
+
+.reel-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16; /* Formato vertical vertical típico de Reels */
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.reel-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.reel-card:hover .reel-media img {
+  transform: scale(1.04);
+}
+
+.reel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(60, 61, 52, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.reel-card:hover .reel-overlay {
+  background: rgba(60, 61, 52, 0.4);
+}
+
+.play-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--sage-d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  padding-left: 3px;
+  transition: transform 0.25s ease;
+}
+
+.reel-card:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.reel-info {
+  padding: 1.2rem 1.3rem;
+  flex: 1;
+}
+
+.reel-info h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.3rem;
+}
+
+.reel-info p {
+  font-size: 0.95rem;
+  color: color-mix(in srgb,var(--ink) 82%,var(--cream));
+}
+
+@media (max-width: 800px) {
+  .reels-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

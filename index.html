@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calma velas de soja</title>
+<meta name="description" content="Velas de soja artesanales. Elegí del catálogo o diseñá la tuya.">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top" id="header"></header>
+<main id="app"></main>
+
+<!-- El footer NO se edita desde el CMS -->
+<footer><p>Diseñado por <a href="https://www.instagram.com/ladoctavirtualdiseno/" target="_blank" rel="noopener">La Docta Virtual Diseño</a></p></footer>
+
+<noscript><p style="padding:2rem;text-align:center">Este sitio necesita JavaScript para mostrarse.</p></noscript>
+
+<script>
+(function () {
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const get = n => fetch("/content/" + n + ".json").then(r => { if (!r.ok) throw new Error(n); return r.json(); });
+  const wa = (num, txt) => "https://wa.me/" + String(num).replace(/\D/g, "") + "?text=" + encodeURIComponent(txt);
+  const fill = (tpl, data) => tpl.replace(/\{(\w+)\}/g, (_, k) => data[k] == null ? "" : data[k]);
+  const BANDAS = ["sage", "tan", "mauve", "lav"];
+
+  Promise.all(["ajustes", "inicio", "valores", "catalogo", "personalizar", "instagram", "reels"].map(get))
+    .then(([aj, ini, val, cat, per, ig, rl]) => {
+
+      /* ---- Colores (variables CSS) ---- */
+      const map = { crema: "--cream", papel: "--paper", salvia: "--sage", salvia_oscuro: "--sage-d", arcilla: "--tan", malva: "--mauve", lavanda: "--lav", texto: "--ink", suave: "--soft" };
+      const root = document.documentElement.style;
+      Object.keys(map).forEach(k => { if (aj.colores && aj.colores[k]) root.setProperty(map[k], aj.colores[k]); });
+
+      /* ---- Meta ---- */
+      document.title = aj.titulo_sitio;
+      const md = document.querySelector('meta[name="description"]');
+      if (md) md.content = aj.descripcion || "";
+
+      /* ---- Header ---- */
+      const m = aj.menu || {};
+      document.getElementById("header").innerHTML =
+        `<a class="logo" href="#inicio"><img src="${esc(aj.logo)}" alt="${esc(aj.titulo_sitio)}"><span>${esc(aj.logo_texto)}<small>${esc(aj.logo_subtexto)}</small></span></a>
+         <nav><a href="#catalogo">${esc(m.catalogo)}</a><a href="#personalizar">${esc(m.personalizar)}</a><a href="#instagram">${esc(m.instagram)}</a></nav>`;
+
+      /* ---- Secciones ---- */
+      const hero = `
+<section class="hero" id="inicio">
+  <div class="hero-text"><span class="script">${esc(ini.frase)}</span>
+    <h1>${esc(ini.titulo)}</h1>
+    <p>${esc(ini.texto)}</p>
+    <a class="btn big" href="#catalogo">${esc(ini.boton_1)}</a> <a class="btn big ghost" href="#personalizar">${esc(ini.boton_2)}</a></div>
+  <img class="hero-img" src="${esc(ini.imagen)}" alt="${esc(ini.imagen_alt)}">
+</section>`;
+
+      const values = `<section class="values">${(val.items || []).map(v => `<div><b>${esc(v.titulo)}</b><span>${esc(v.subtitulo)}</span></div>`).join("")}</section>`;
+
+      const catalogo = `
+<section id="catalogo"><div class="wrap">
+  <h2>${esc(cat.titulo)}</h2><p class="lead">${esc(cat.bajada)}</p>
+  <div class="grid">${(cat.productos || []).map(p => {
+        const banda = BANDAS.includes(p.color_banda) ? p.color_banda : "sage";
+        const link = wa(aj.whatsapp, fill(aj.mensaje_compra, { nombre: p.nombre, precio: p.precio }));
+        return `<article class="card">
+    <img src="${esc(p.imagen)}" alt="Vela de soja ${esc(p.nombre)}" loading="lazy">
+    <div class="body"><h3>${esc(p.nombre)}</h3><p>${esc(p.descripcion)}</p><span class="note">${esc(p.detalle)}</span></div>
+    <div class="band ${banda}"><strong>${esc(p.precio)}</strong><a class="btn" href="${link}" target="_blank" rel="noopener">${esc(cat.boton)}</a></div>
+  </article>`;
+      }).join("")}</div>
+</div></section>`;
+
+      const radios = (name, items, labelFn) => items.map((it, i) =>
+        `<input type="radio" name="${name}" id="${name}${i + 1}" value="${i}"${i === 0 ? " checked" : ""}><label for="${name}${i + 1}"${labelFn.style ? ` style="--c:${esc(labelFn.style(it))}"` : ""}>${esc(labelFn.text(it))}</label>`).join("");
+
+      const formas = per.formas || [], colores = per.colores || [], aromas = per.aromas || [];
+      const personalizar = `
+<section id="personalizar" class="soft"><div class="wrap narrow">
+  <h2>${esc(per.titulo)}</h2><p class="lead">${esc(per.bajada)}</p>
+  <img class="custom-img" src="${esc(per.imagen)}" alt="${esc(per.imagen_alt)}">
+  <div class="custom" id="custom">
+    <fieldset><legend>${esc(per.titulo_formas)}</legend>${radios("s", formas, { text: x => x })}</fieldset>
+    <fieldset><legend>${esc(per.titulo_colores)}</legend>${radios("c", colores, { text: x => x.nombre, style: x => x.color })}</fieldset>
+    <fieldset><legend>${esc(per.titulo_aromas)}</legend>${radios("a", aromas, { text: x => x })}</fieldset>
+    <div class="send"><a class="btn big" id="customLink" href="#" target="_blank" rel="noopener">${esc(per.boton)}</a></div>
+  </div>
+</div></section>`;
+
+      const instagram = `
+<section id="instagram"><div class="wrap narrow center">
+  <span class="script">${esc(ig.frase)}</span>
+  <h2>${esc(ig.titulo)}</h2>
+  <p class="lead">${esc(ig.bajada)}</p>
+  <a class="btn big" href="${esc(ig.url)}" target="_blank" rel="noopener">${esc(ig.boton)}</a></div></section>`;
+
+      const reels = `
+<section class="reels-section soft">
+  <div class="wrap">
+    <div class="center"><h2>${esc(rl.titulo)}</h2><p class="lead">${esc(rl.bajada)}</p></div>
+    <div class="reels-grid">${(rl.items || []).map(r => `
+      <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="reel-card">
+        <div class="reel-media">
+          <img src="${esc(r.imagen)}" alt="${esc(r.imagen_alt)}" loading="lazy">
+          <div class="reel-overlay"><span class="play-icon">&#9654;</span></div>
+        </div>
+        <div class="reel-info"><h3>${esc(r.titulo)}</h3><p>${esc(r.texto)}</p></div>
+      </a>`).join("")}
+    </div>
+  </div>
+</section>`;
+
+      document.getElementById("app").innerHTML = hero + values + catalogo + personalizar + instagram + reels;
+
+      /* ---- Personalizador: arma el link de WhatsApp ---- */
+      const box = document.getElementById("custom"), link = document.getElementById("customLink");
+      const sel = name => +(box.querySelector(`input[name="${name}"]:checked`) || { value: 0 }).value;
+      const update = () => {
+        link.href = wa(aj.whatsapp, fill(aj.mensaje_personalizar, {
+          forma: formas[sel("s")] || "",
+          color: (colores[sel("c")] || {}).nombre || "",
+          aroma: aromas[sel("a")] || ""
+        }));
+      };
+      box.addEventListener("change", update);
+      update();
+
+      /* Respeta el #ancla de la URL una vez que el contenido existe */
+      if (location.hash) { const t = document.querySelector(location.hash); if (t) t.scrollIntoView(); }
+    })
+    .catch(e => {
+      document.getElementById("app").innerHTML = '<p style="padding:3rem;text-align:center">No se pudo cargar el contenido (' + esc(e.message) + ').</p>';
+    });
+})();
+</script>
+<!-- Necesario para que los links de invitación de Netlify Identity lleven a /admin -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", function (user) {
+    if (!user) window.netlifyIdentity.on("login", function () { document.location.href = "/admin/"; });
+  });
+}
+</script>
+</body></html>

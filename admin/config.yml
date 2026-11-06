@@ -1,0 +1,170 @@
+# ---------------------------------------------------------------
+# Decap CMS - Calma velas de soja
+# Login con email (Netlify Identity + Git Gateway): los editores NO
+# necesitan cuenta de GitHub. Solo entran los mails que invites.
+# ---------------------------------------------------------------
+backend:
+  name: git-gateway
+  branch: main
+
+# Para probar en tu compu: ejecutá "npx decap-server" y abrí /admin/
+# (podés borrar esta línea cuando termines de probar)
+local_backend: true
+
+locale: es
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: sitio
+    label: "Contenido del sitio"
+    files:
+
+      # ------------------------- AJUSTES Y COLORES -------------------------
+      - name: ajustes
+        label: "Ajustes generales y colores"
+        file: "content/ajustes.json"
+        format: json
+        fields:
+          - { label: "Título del sitio (pestaña del navegador)", name: titulo_sitio, widget: string }
+          - { label: "Descripción para Google", name: descripcion, widget: text }
+          - { label: "Logo", name: logo, widget: image }
+          - { label: "Logo - texto grande", name: logo_texto, widget: string }
+          - { label: "Logo - texto chico", name: logo_subtexto, widget: string }
+          - { label: "WhatsApp (solo números, con código de país. Ej: 5491112345678)", name: whatsapp, widget: string }
+          - { label: "Mensaje de compra (usá {nombre} y {precio})", name: mensaje_compra, widget: string }
+          - { label: "Mensaje de personalización (usá {forma}, {color} y {aroma})", name: mensaje_personalizar, widget: string }
+          - label: "Textos del menú"
+            name: menu
+            widget: object
+            fields:
+              - { label: "Catálogo", name: catalogo, widget: string }
+              - { label: "Personalizá", name: personalizar, widget: string }
+              - { label: "Instagram", name: instagram, widget: string }
+          - label: "Colores del sitio"
+            name: colores
+            widget: object
+            fields:
+              - { label: "Fondo general (crema)", name: crema, widget: color, allowInput: true }
+              - { label: "Fondo de tarjetas (papel)", name: papel, widget: color, allowInput: true }
+              - { label: "Verde principal (salvia) - botones, franjas, footer", name: salvia, widget: color, allowInput: true }
+              - { label: "Verde oscuro (hover y textos destacados)", name: salvia_oscuro, widget: color, allowInput: true }
+              - { label: "Color arcilla (franja de precio)", name: arcilla, widget: color, allowInput: true }
+              - { label: "Color malva (franja de precio)", name: malva, widget: color, allowInput: true }
+              - { label: "Color lavanda (foco y detalles)", name: lavanda, widget: color, allowInput: true }
+              - { label: "Color del texto", name: texto, widget: color, allowInput: true }
+              - { label: "Fondo suave (secciones alternadas y bordes)", name: suave, widget: color, allowInput: true }
+
+      # ------------------------------ INICIO ------------------------------
+      - name: inicio
+        label: "Inicio (portada)"
+        file: "content/inicio.json"
+        format: json
+        fields:
+          - { label: "Frase manuscrita", name: frase, widget: string }
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Texto", name: texto, widget: text }
+          - { label: "Botón 1", name: boton_1, widget: string }
+          - { label: "Botón 2", name: boton_2, widget: string }
+          - { label: "Imagen", name: imagen, widget: image }
+          - { label: "Descripción de la imagen (accesibilidad)", name: imagen_alt, widget: string }
+
+      # ------------------------------ VALORES ------------------------------
+      - name: valores
+        label: "Franja de valores"
+        file: "content/valores.json"
+        format: json
+        fields:
+          - label: "Valores"
+            name: items
+            widget: list
+            min: 1
+            max: 3
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Subtítulo", name: subtitulo, widget: string }
+
+      # ------------------------------ CATÁLOGO ------------------------------
+      - name: catalogo
+        label: "Catálogo de velas"
+        file: "content/catalogo.json"
+        format: json
+        fields:
+          - { label: "Título de la sección", name: titulo, widget: string }
+          - { label: "Bajada", name: bajada, widget: string }
+          - { label: "Texto del botón de compra", name: boton, widget: string }
+          - label: "Productos"
+            name: productos
+            widget: list
+            summary: "{{fields.nombre}} - {{fields.precio}}"
+            fields:
+              - { label: "Nombre", name: nombre, widget: string }
+              - { label: "Descripción", name: descripcion, widget: string }
+              - { label: "Detalle (peso y duración)", name: detalle, widget: string, hint: "Ej: ( 200 g · 40 hs )" }
+              - { label: "Precio", name: precio, widget: string, hint: "Ej: $9.500" }
+              - label: "Color de la franja de precio"
+                name: color_banda
+                widget: select
+                default: "sage"
+                options:
+                  - { label: "Salvia (verde)", value: "sage" }
+                  - { label: "Arcilla", value: "tan" }
+                  - { label: "Malva", value: "mauve" }
+                  - { label: "Lavanda", value: "lav" }
+              - { label: "Foto", name: imagen, widget: image }
+
+      # ---------------------------- PERSONALIZADOR ----------------------------
+      - name: personalizar
+        label: "Personalizá tu vela"
+        file: "content/personalizar.json"
+        format: json
+        fields:
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Bajada", name: bajada, widget: text }
+          - { label: "Imagen", name: imagen, widget: image }
+          - { label: "Descripción de la imagen (accesibilidad)", name: imagen_alt, widget: string }
+          - { label: "Título del paso 1", name: titulo_formas, widget: string }
+          - { label: "Formas disponibles", name: formas, widget: list, field: { label: "Forma", name: forma, widget: string } }
+          - { label: "Título del paso 2", name: titulo_colores, widget: string }
+          - label: "Colores disponibles"
+            name: colores
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { label: "Nombre del color", name: nombre, widget: string }
+              - { label: "Color", name: color, widget: color, allowInput: true }
+          - { label: "Título del paso 3", name: titulo_aromas, widget: string }
+          - { label: "Aromas disponibles", name: aromas, widget: list, field: { label: "Aroma", name: aroma, widget: string } }
+          - { label: "Texto del botón", name: boton, widget: string }
+
+      # ------------------------------ INSTAGRAM ------------------------------
+      - name: instagram
+        label: "Sección Instagram"
+        file: "content/instagram.json"
+        format: json
+        fields:
+          - { label: "Frase manuscrita", name: frase, widget: string }
+          - { label: "Título", name: titulo, widget: string }
+          - { label: "Bajada", name: bajada, widget: string }
+          - { label: "Texto del botón", name: boton, widget: string }
+          - { label: "Link de Instagram", name: url, widget: string }
+
+      # ------------------------------- REELS -------------------------------
+      - name: reels
+        label: "Reels / videos"
+        file: "content/reels.json"
+        format: json
+        fields:
+          - { label: "Título de la sección", name: titulo, widget: string }
+          - { label: "Bajada", name: bajada, widget: string }
+          - label: "Reels"
+            name: items
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { label: "Título", name: titulo, widget: string }
+              - { label: "Texto", name: texto, widget: text }
+              - { label: "Imagen de portada", name: imagen, widget: image }
+              - { label: "Descripción de la imagen (accesibilidad)", name: imagen_alt, widget: string }
+              - { label: "Link del reel", name: url, widget: string }

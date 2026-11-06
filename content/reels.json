@@ -1,0 +1,27 @@
+{
+  "titulo": "Conoce mas sobre nuestras velas",
+  "bajada": "Descubrí nuestros procesos, tips de cuidado y novedades en video.",
+  "items": [
+    {
+      "titulo": "Proceso de Elaboración",
+      "texto": "Mirá cómo vertemos a mano nuestras velas 100% de cera de soja.",
+      "imagen": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80",
+      "imagen_alt": "Proceso de llenado de velas",
+      "url": "https://www.instagram.com/calma_velas_de_soja/"
+    },
+    {
+      "titulo": "Tips de Cuidado",
+      "texto": "¿Cómo cortar el pabilo para que tu vela dure el doble de tiempo?",
+      "imagen": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80",
+      "imagen_alt": "Tips para el cuidado del pabilo",
+      "url": "https://www.instagram.com/calma_velas_de_soja/"
+    },
+    {
+      "titulo": "Nuevos Aromas",
+      "texto": "Presentamos la línea de fragancias botánicas para esta temporada.",
+      "imagen": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=600&q=80",
+      "imagen_alt": "Nuevas fragancias de la estación",
+      "url": "https://www.instagram.com/calma_velas_de_soja/"
+    }
+  ]
+}
