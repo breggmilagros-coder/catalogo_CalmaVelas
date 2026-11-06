@@ -3,25 +3,18 @@
   "bajada": "Descubrí nuestros procesos, tips de cuidado y novedades en video.",
   "items": [
     {
-      "titulo": "Proceso de Elaboración",
-      "texto": "Mirá cómo vertemos a mano nuestras velas 100% de cera de soja.",
-      "imagen": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80",
-      "imagen_alt": "Proceso de llenado de velas",
-      "url": "https://www.instagram.com/calma_velas_de_soja/"
+      "titulo": "Souvenirs de Ositos y Conejitos PersonalizadosProceso de Elaboración",
+      "texto": "Velas artesanales en frascos de vidrio.",
+      "imagen": "/img/reel01.png",
+      "imagen_alt": "Set de delicadas velas artesanales en frascos de vidrio decorados con figuras de ositos y conejitos, ideales para bautismos, cumpleaños y eventos especiales, con etiquetas personalizadas.",
+      "url": "https://www.instagram.com/reel/DcOjhoNxfYF/"
     },
     {
-      "titulo": "Tips de Cuidado",
-      "texto": "¿Cómo cortar el pabilo para que tu vela dure el doble de tiempo?",
-      "imagen": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80",
-      "imagen_alt": "Tips para el cuidado del pabilo",
-      "url": "https://www.instagram.com/calma_velas_de_soja/"
-    },
-    {
-      "titulo": "Nuevos Aromas",
-      "texto": "Presentamos la línea de fragancias botánicas para esta temporada.",
-      "imagen": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=600&q=80",
-      "imagen_alt": "Nuevas fragancias de la estación",
-      "url": "https://www.instagram.com/calma_velas_de_soja/"
+      "titulo": "Guía del Calibre de la Mecha",
+      "texto": "Guía del Calibre de la Mecha.",
+      "imagen": "/img/reel02.png",
+      "imagen_alt": "Publicación educativa/informativa sobre la elección y ajuste del grosor de la mecha de algodón (hilo simple, doble y trenzado) según el tipo de vela artesanal.",
+      "url": "https://www.instagram.com/reel/DajCs1SRpxK/"
     }
   ]
 }
