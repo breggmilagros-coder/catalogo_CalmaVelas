@@ -4,84 +4,100 @@
   "boton": "Comprar por WhatsApp",
   "productos": [
     {
-      "nombre": "Lavanda & Calma",
-      "descripcion": "Aroma floral suave para soltar el día.",
+      "nombre": "Sandía y Pepino",
+      "descripcion": "Vela artesanal de soja personalizada en vaso de vidrio elegante, con una delicada flor decorativa verde y aroma fresco, frutal y delicado.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9.500",
+      "precio": "$9000",
       "color_banda": "tan",
       "imagen": "/img/01.jpg"
     },
     {
-      "nombre": "Vainilla Cremosa",
-      "descripcion": "Dulce, tibia y envolvente.",
+      "nombre": "Coco y Vainilla",
+      "descripcion": "Velas aromáticas de coco y vainilla, con delicados detalles de rosas, ideales para regalar, agradecer y crear momentos especiales.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9.500",
+      "precio": "$9.000",
       "color_banda": "mauve",
       "imagen": "/img/02.jpg"
     },
     {
-      "nombre": "Eucalipto Fresco",
-      "descripcion": "Aire limpio para tu espacio de trabajo.",
+      "nombre": "Rostros de Calma",
+      "descripcion": "Nuevas velitas artesanales en vasitos de vidrio con relieve de rostros. Perfectas para crear un rincón cálido y acogedor en tu hogar, combinando diseño y armonía en cada espacio.",
       "detalle": "( 220 g · 45 hs )",
       "precio": "$9.800",
       "color_banda": "sage",
       "imagen": "/img/03.jpg"
     },
     {
-      "nombre": "Sándalo & Ámbar",
-      "descripcion": "Notas amaderadas, cálidas y profundas.",
+      "nombre": "Souvenirs Escultura",
+      "descripcion": "Volitas artesanales en frascos de vidrio decorados, con detalles de perlas y dijes (como el ojo turco). Ideales para comuniones, bautismos, baby showers, cumpleaños y eventos especiales.",
       "detalle": "( 220 g · 45 hs )",
-      "precio": "$10.500",
+      "precio": "$7.000",
       "color_banda": "tan",
       "imagen": "/img/04.jpg"
     },
     {
-      "nombre": "Té Blanco",
-      "descripcion": "Liviana, limpia y delicada.",
+      "nombre": "Ganesha y Flor de Loto",
+      "descripcion": "Velas artesanales que transmiten paz, amor y buenas energías. Incluye la figura de Ganesha, símbolo de prosperidad y protección, y una flor de loto, símbolo de pureza y renovación.",
       "detalle": "( 180 g · 35 hs )",
-      "precio": "$9.200",
+      "precio": "$12.000",
       "color_banda": "mauve",
       "imagen": "/img/05.jpg"
     },
     {
-      "nombre": "Flor de Algodón",
-      "descripcion": "Aroma a ropa recién lavada.",
+      "nombre": "Latas Decorativas Mármol",
+      "descripcion": "Latas de velas decorativas con acabado marmoleado. Elegí tu color favorito y personalizá el aroma que más te guste para llenar tus espacios de magia.",
       "detalle": "( 180 g · 35 hs )",
-      "precio": "$9.200",
+      "precio": "$6.000",
       "color_banda": "sage",
       "imagen": "/img/06.jpg"
     },
     {
-      "nombre": "Cítricos del Sur",
-      "descripcion": "Naranja y bergamota para despertar.",
+      "nombre": "Velas en Flor de Souvenir",
+      "descripcion": "Delicadas velas artesanales en forma de flores en frascos de vidrio. Ideales para cumpleaños, 15 años, bautismos, casamientos, baby showers y eventos especiales.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9.800",
+      "precio": "$9.000",
       "color_banda": "tan",
       "imagen": "/img/07.jpg"
     },
     {
-      "nombre": "Jazmín Nocturno",
-      "descripcion": "Floral intenso para las noches.",
+      "nombre": "Vela Hamsa Protectora",
+      "descripcion": "Vela artesanal con la forma de la mano de Fátima (Hamsa), detalle simbólico de protección, armonía y buenas energías para tus espacios.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$10.200",
+      "precio": "$12.200",
       "color_banda": "mauve",
       "imagen": "/img/08.jpg"
     },
     {
-      "nombre": "Bosque de Pino",
-      "descripcion": "Verde, fresco y silvestre.",
+      "nombre": "Osito tierno personalizado",
+      "descripcion": "Vela artesanal decorativa en vaso de vidrio con la figura de un tierno osito con lazo rosado y etiqueta personalizada con nombre, ideal para recuerdos y detalles especiales.",
       "detalle": "( 250 g · 50 hs )",
-      "precio": "$10.500",
+      "precio": "$7.000",
       "color_banda": "sage",
       "imagen": "/img/09.jpg"
     },
     {
-      "nombre": "Set Trío Mini",
-      "descripcion": "Tres velas mini para regalar.",
+      "nombre": "Osito y Rosas",
+      "descripcion": "Vela artesanal decorativa en vaso de vidrio con un osito, detalles de flores y una tarjeta colgante con la inscripción \"para ti mi amor\", ideal para regalar en ocasiones especiales.",
       "detalle": "( 3 x 80 g )",
-      "precio": "$14.900",
+      "precio": "$7.000",
       "color_banda": "tan",
       "imagen": "/img/10.jpg"
+    },
+    {
+      "color_banda": "sage",
+      "imagen": "/img/11.jpg",
+      "nombre": "Osito tierno con lazo celeste",
+      "descripcion": "Vela artesanal decorativa en vaso de vidrio con la figura de un tierno osito coronado con un delicado moño celeste y base aromatizada, ideal para regalos y recuerdos tiernos.",
+      "precio": "$9.000",
+      "detalle": "200 g · 40 hs"
+    },
+    {
+      "color_banda": "sage",
+      "nombre": "Osito con gorrito",
+      "descripcion": "Dulzura, serenidad y tranquilidad. Velas artesanales con aromas relajantes y notas suaves, presentado con la figura de un osito con gorrito y la etiqueta personalizada \"CIRO\".",
+      "detalle": "200 g · 40 hs ",
+      "precio": "$9.000",
+      "imagen": "/img/12.jpg"
     }
   ]
 }
