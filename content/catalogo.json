@@ -7,7 +7,7 @@
       "nombre": "Sandía y Pepino",
       "descripcion": "Vela artesanal de soja personalizada en vaso de vidrio elegante, con una delicada flor decorativa verde y aroma fresco, frutal y delicado.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9000",
+      "precio": "$8.000",
       "color_banda": "tan",
       "imagen": "/img/01.jpg"
     },
@@ -15,7 +15,7 @@
       "nombre": "Coco y Vainilla",
       "descripcion": "Velas aromáticas de coco y vainilla, con delicados detalles de rosas, ideales para regalar, agradecer y crear momentos especiales.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9.000",
+      "precio": "$8.000",
       "color_banda": "mauve",
       "imagen": "/img/02.jpg"
     },
@@ -23,7 +23,7 @@
       "nombre": "Rostros de Calma",
       "descripcion": "Nuevas velitas artesanales en vasitos de vidrio con relieve de rostros. Perfectas para crear un rincón cálido y acogedor en tu hogar, combinando diseño y armonía en cada espacio.",
       "detalle": "( 220 g · 45 hs )",
-      "precio": "$9.800",
+      "precio": "$9.000",
       "color_banda": "sage",
       "imagen": "/img/03.jpg"
     },
@@ -39,7 +39,7 @@
       "nombre": "Ganesha y Flor de Loto",
       "descripcion": "Velas artesanales que transmiten paz, amor y buenas energías. Incluye la figura de Ganesha, símbolo de prosperidad y protección, y una flor de loto, símbolo de pureza y renovación.",
       "detalle": "( 180 g · 35 hs )",
-      "precio": "$12.000",
+      "precio": "$10.000",
       "color_banda": "mauve",
       "imagen": "/img/05.jpg"
     },
@@ -55,7 +55,7 @@
       "nombre": "Velas en Flor de Souvenir",
       "descripcion": "Delicadas velas artesanales en forma de flores en frascos de vidrio. Ideales para cumpleaños, 15 años, bautismos, casamientos, baby showers y eventos especiales.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$9.000",
+      "precio": "$8.500",
       "color_banda": "tan",
       "imagen": "/img/07.jpg"
     },
@@ -63,7 +63,7 @@
       "nombre": "Vela Hamsa Protectora",
       "descripcion": "Vela artesanal con la forma de la mano de Fátima (Hamsa), detalle simbólico de protección, armonía y buenas energías para tus espacios.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$12.200",
+      "precio": "$5.000",
       "color_banda": "mauve",
       "imagen": "/img/08.jpg"
     },
