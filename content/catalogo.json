@@ -122,6 +122,14 @@
       "detalle": "100",
       "precio": "$5500",
       "imagen": "/img/whatsapp-image-2026-11-09-at-07.16.04.jpeg"
+    },
+    {
+      "color_banda": "sage",
+      "nombre": "souvenir de vidrio decorado con niña rezando",
+      "descripcion": "caramelera vela de soja decorado con perlas y dije plateado",
+      "detalle": "200",
+      "precio": "$6000",
+      "imagen": "/img/whatsapp-image-2026-11-13-at-18.39.16.jpeg"
     }
   ]
 }
