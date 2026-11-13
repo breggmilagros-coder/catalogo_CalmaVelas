@@ -98,6 +98,14 @@
       "detalle": "200 g · 40 hs ",
       "precio": "$7.000",
       "imagen": "/img/12.jpg"
+    },
+    {
+      "color_banda": "sage",
+      "nombre": "virgencitas",
+      "descripcion": "hermosas velas de soja personaliza color y aroma.",
+      "detalle": "200g",
+      "precio": "$4000",
+      "imagen": "/img/whatsapp-image-2026-11-09-at-18.29.47.jpeg"
     }
   ]
 }
