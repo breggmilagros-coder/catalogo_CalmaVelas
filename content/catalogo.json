@@ -106,6 +106,14 @@
       "detalle": "200g",
       "precio": "$4000",
       "imagen": "/img/whatsapp-image-2026-11-09-at-18.29.47.jpeg"
+    },
+    {
+      "color_banda": "sage",
+      "nombre": "Rosas personaliza su color y aroma",
+      "descripcion": "Rosas velas de soja",
+      "detalle": "200",
+      "precio": "$3500",
+      "imagen": "/img/whatsapp-image-2026-11-13-at-12.15.41.jpeg"
     }
   ]
 }
