@@ -31,7 +31,7 @@
       "nombre": "Souvenirs Escultura",
       "descripcion": "Volitas artesanales en frascos de vidrio decorados, con detalles de perlas y dijes (como el ojo turco). Ideales para comuniones, bautismos, baby showers, cumpleaños y eventos especiales.",
       "detalle": "( 220 g · 45 hs )",
-      "precio": "$7.000",
+      "precio": "$6000",
       "color_banda": "tan",
       "imagen": "/img/04.jpg"
     },
@@ -39,7 +39,7 @@
       "nombre": "Ganesha y Flor de Loto",
       "descripcion": "Velas artesanales que transmiten paz, amor y buenas energías. Incluye la figura de Ganesha, símbolo de prosperidad y protección, y una flor de loto, símbolo de pureza y renovación.",
       "detalle": "( 180 g · 35 hs )",
-      "precio": "$10.000",
+      "precio": "$7500",
       "color_banda": "mauve",
       "imagen": "/img/05.jpg"
     },
@@ -47,7 +47,7 @@
       "nombre": "Latas Decorativas Mármol",
       "descripcion": "Latas de velas decorativas con acabado marmoleado. Elegí tu color favorito y personalizá el aroma que más te guste para llenar tus espacios de magia.",
       "detalle": "( 180 g · 35 hs )",
-      "precio": "$6.000",
+      "precio": "$5000",
       "color_banda": "sage",
       "imagen": "/img/06.jpg"
     },
@@ -68,15 +68,15 @@
       "imagen": "/img/08.jpg"
     },
     {
-      "nombre": "Osito tierno personalizado",
+      "nombre": "Osito tierno personalizado con vaso y tarjeta personalizada",
       "descripcion": "Vela artesanal decorativa en vaso de vidrio con la figura de un tierno osito con lazo rosado y etiqueta personalizada con nombre, ideal para recuerdos y detalles especiales.",
       "detalle": "( 250 g · 50 hs )",
-      "precio": "$7.000",
+      "precio": "$6.500",
       "color_banda": "sage",
       "imagen": "/img/09.jpg"
     },
     {
-      "nombre": "Osito y Rosas",
+      "nombre": "Osito y Rosas en vaso con tarjeta personalizadas soja y parafina",
       "descripcion": "Vela artesanal decorativa en vaso de vidrio con un osito, detalles de flores y una tarjeta colgante con la inscripción \"para ti mi amor\", ideal para regalar en ocasiones especiales.",
       "detalle": "( 3 x 80 g )",
       "precio": "$7.000",
@@ -86,17 +86,17 @@
     {
       "color_banda": "sage",
       "imagen": "/img/11.jpg",
-      "nombre": "Osito tierno con lazo celeste",
+      "nombre": "Osito tierno con lazo celeste con vaso y tarjeta personalizada",
       "descripcion": "Vela artesanal decorativa en vaso de vidrio con la figura de un tierno osito coronado con un delicado moño celeste y base aromatizada, ideal para regalos y recuerdos tiernos.",
-      "precio": "$7.000",
+      "precio": "$6.500",
       "detalle": "200 g · 40 hs"
     },
     {
       "color_banda": "sage",
-      "nombre": "Osito con gorrito",
+      "nombre": "Osito con gorrito en vaso con tarjeta personalizada",
       "descripcion": "Dulzura, serenidad y tranquilidad. Velas artesanales con aromas relajantes y notas suaves, presentado con la figura de un osito con gorrito y la etiqueta personalizada \"CIRO\".",
       "detalle": "200 g · 40 hs ",
-      "precio": "$7.000",
+      "precio": "$6.500",
       "imagen": "/img/12.jpg"
     },
     {
