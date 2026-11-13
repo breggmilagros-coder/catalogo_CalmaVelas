@@ -6,16 +6,16 @@
     {
       "nombre": "Sandía y Pepino",
       "descripcion": "Vela artesanal de soja personalizada en vaso de vidrio elegante, con una delicada flor decorativa verde y aroma fresco, frutal y delicado.",
-      "detalle": "( 200 g · 40 hs )",
-      "precio": "$8.000",
+      "detalle": "( 200 g · 40 hs ) ",
+      "precio": "$7.000",
       "color_banda": "tan",
       "imagen": "/img/01.jpg"
     },
     {
-      "nombre": "Coco y Vainilla",
+      "nombre": "Coco y Vainilla ",
       "descripcion": "Velas aromáticas de coco y vainilla, con delicados detalles de rosas, ideales para regalar, agradecer y crear momentos especiales.",
       "detalle": "( 200 g · 40 hs )",
-      "precio": "$8.000",
+      "precio": "$7.000",
       "color_banda": "mauve",
       "imagen": "/img/02.jpg"
     },
