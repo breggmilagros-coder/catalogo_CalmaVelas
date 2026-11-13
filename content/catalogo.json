@@ -114,6 +114,14 @@
       "detalle": "200",
       "precio": "$3500",
       "imagen": "/img/whatsapp-image-2026-11-13-at-12.15.41.jpeg"
+    },
+    {
+      "color_banda": "sage",
+      "nombre": "coronitas ideal para festejar tus 15 años",
+      "descripcion": "coronitas de vidrio con vela de soja y parafina decorada con estrellas plateadas",
+      "detalle": "100",
+      "precio": "$5500",
+      "imagen": "/img/whatsapp-image-2026-11-09-at-07.16.04.jpeg"
     }
   ]
 }
